@@ -25,7 +25,8 @@ SizzsLoader.Name = "SizzsLoader"
 SizzsLoader.Parent = Main
 SizzsLoader.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 SizzsLoader.BorderSizePixel = 0
-SizzsLoader.Position = UDim2.new(0.356347442, 0, 0.352941215, 0)
+SizzsLoader.Position = UDim2.new(0.5,0,0.5,0)
+SizzsLoader.AnchorPoint = UDim.new(0.5,0.5)
 SizzsLoader.Size = UDim2.new(0, 387, 0, 185)
 
 VersionText.Parent = SizzsLoader
