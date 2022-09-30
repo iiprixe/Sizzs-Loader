@@ -1,0 +1,197 @@
+if game.CoreGui:FindFirstChild("Main") then
+    game.CoreGui.Main:Destroy()
+end
+
+local Main = Instance.new("ScreenGui")
+local SizzsLoader = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local HubName = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local LoadFrame = Instance.new("Frame")
+local T1 = Instance.new("Frame")
+local T2 = Instance.new("Frame")
+local T3 = Instance.new("Frame")
+local T4 = Instance.new("Frame")
+local T5 = Instance.new("Frame")
+local VersionText = Instance.new("StringValue")
+local HubNameText = Instance.new("StringValue")
+local Loaded = Instance.new("BoolValue")
+local UIListLayout = Instance.new("UIListLayout")
+
+Main.Name = "Main"
+Main.Parent = game.CoreGui
+
+SizzsLoader.Name = "SizzsLoader"
+SizzsLoader.Parent = Main
+SizzsLoader.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SizzsLoader.BorderSizePixel = 0
+SizzsLoader.Position = UDim2.new(0.356347442, 0, 0.352941215, 0)
+SizzsLoader.Size = UDim2.new(0, 387, 0, 185)
+
+VersionText.Parent = SizzsLoader
+VersionText.Name = "VersionText"
+VersionText.Value = VersionTextValue
+
+HubNameText.Parent = SizzsLoader
+HubNameText.Name = "HubNameText"
+HubNameText.Value = HubTextValue
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = SizzsLoader
+
+HubName.Name = "HubName"
+HubName.Parent = SizzsLoader
+HubName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HubName.BackgroundTransparency = 1.000
+HubName.Size = UDim2.new(0, 387, 0, 50)
+HubName.Font = Enum.Font.SourceSansLight
+HubName.Text = HubNameText.Value
+HubName.TextColor3 = Color3.fromRGB(255, 255, 255)
+HubName.TextSize = 34.000
+
+Version.Name = "Version"
+Version.Parent = SizzsLoader
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0, 0, 0.213837847, 0)
+Version.Size = UDim2.new(0, 387, 0, 50)
+Version.Font = Enum.Font.SourceSansLight
+Version.Text = VersionText.Value
+Version.TextColor3 = Color3.fromRGB(170, 170, 255)
+
+Version.TextSize = 40.000
+
+LoadFrame.Name = "LoadFrame"
+LoadFrame.Parent = SizzsLoader
+LoadFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadFrame.BackgroundTransparency = 1.000
+LoadFrame.Position = UDim2.new(0.229974166, 0, 0.618162274, 0)
+LoadFrame.Size = UDim2.new(0, 208, 0, 70)
+
+T1.Name = "T1"
+T1.Parent = LoadFrame
+T1.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+T1.Position = UDim2.new(0.177884609, 0, 0, 0)
+T1.Size = UDim2.new(0, 31, 0, 17)
+
+T2.Name = "T2"
+T2.Parent = LoadFrame
+T2.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+T2.Position = UDim2.new(0.328846276, 0, 0, 0)
+T2.Size = UDim2.new(0, 31, 0, 17)
+
+T3.Name = "T3"
+T3.Parent = LoadFrame
+T3.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+T3.Position = UDim2.new(0.479807645, 0, 0, 0)
+T3.Size = UDim2.new(0, 31, 0, 17)
+
+T4.Name = "T4"
+T4.Parent = LoadFrame
+T4.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+T4.Position = UDim2.new(0.630769312, 0, 0, 0)
+T4.Size = UDim2.new(0, 31, 0, 17)
+
+T5.Name = "T5"
+T5.Parent = LoadFrame
+T5.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+T5.Position = UDim2.new(0.781730652, 0, 0, 0)
+T5.Size = UDim2.new(0, 31, 0, 17)
+
+UIListLayout.Parent = LoadFrame
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+-- Scripts:
+
+local function SZYMYXF_fake_script() -- LoadFrame.LocalScript 
+	local script = Instance.new('LocalScript', LoadFrame)
+
+	local TS = game:GetService("TweenService")
+	
+	local T1Event1 = TS:Create(script.Parent.T1, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 55)})
+	local T1Event2 = TS:Create(script.Parent.T1, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 17)})
+	local T2Event1 = TS:Create(script.Parent.T2, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 55)})
+	local T2Event2 = TS:Create(script.Parent.T2, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 17)})
+	local T3Event1 = TS:Create(script.Parent.T3, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 55)})
+	local T3Event2 = TS:Create(script.Parent.T3, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 17)})
+	local T4Event1 = TS:Create(script.Parent.T4, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 55)})
+	local T4Event2 = TS:Create(script.Parent.T4, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 17)})
+	local T5Event1 = TS:Create(script.Parent.T5, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 55)})
+	local T5Event2 = TS:Create(script.Parent.T5, TweenInfo.new(1), {Size = UDim2.new(0, 31,0, 17)})
+	
+	wait(6)
+	
+	
+	while script.Parent.Parent.Loaded.Value == false do
+		wait(3.5)
+		T1Event1:Play()
+		wait(0.7)
+		T1Event2:Play()
+		T2Event1:Play()
+		wait(0.7)
+		T2Event2:Play()
+		T3Event1:Play()
+		wait(0.7)
+		T3Event2:Play()
+		T4Event1:Play()
+		wait(0.7)
+		T4Event2:Play()
+		T5Event1:Play()
+		wait(0.7)
+		T5Event2:Play()
+		if script.Parent.Parent.Loaded.Value == true then
+			script.Parent.Parent.Visible = false
+		end
+	end
+	
+end
+coroutine.wrap(SZYMYXF_fake_script)()
+local function EXJHAED_fake_script() -- SizzsLoader.LocalScript 
+	local script = Instance.new('LocalScript', SizzsLoader)
+
+	local TS = game:GetService("TweenService")
+	local fade1 = TS:Create(script.Parent, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local fade2 = TS:Create(script.Parent.HubName, TweenInfo.new(1), {TextTransparency = 0})
+	local fade3 = TS:Create(script.Parent.Version, TweenInfo.new(1), {TextTransparency = 0})
+	
+	local TFade1 = TS:Create(script.Parent.LoadFrame.T1, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local TFade2 = TS:Create(script.Parent.LoadFrame.T2, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local TFade3 = TS:Create(script.Parent.LoadFrame.T3, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local TFade4 = TS:Create(script.Parent.LoadFrame.T4, TweenInfo.new(1), {BackgroundTransparency = 0})
+	local TFade5 = TS:Create(script.Parent.LoadFrame.T5, TweenInfo.new(1), {BackgroundTransparency = 0})
+	
+	script.Parent.BackgroundTransparency = 1
+	script.Parent.HubName.TextTransparency = 1
+	script.Parent.Version.TextTransparency = 1
+	script.Parent.LoadFrame.T1.BackgroundTransparency = 1
+	script.Parent.LoadFrame.T2.BackgroundTransparency = 1
+	script.Parent.LoadFrame.T3.BackgroundTransparency = 1
+	script.Parent.LoadFrame.T4.BackgroundTransparency = 1
+	script.Parent.LoadFrame.T5.BackgroundTransparency = 1
+	
+	wait(1)
+	fade1:Play()
+	wait(1.2)
+	fade2:Play()
+	wait(0.5)
+	fade3:Play()
+	wait(0.5)
+	TFade1:Play()
+	wait(0.3)
+	TFade2:Play()
+	wait(0.3)
+	TFade3:Play()
+	wait(0.3)
+	TFade4:Play()
+	wait(0.3)
+	TFade5:Play()
+end
+coroutine.wrap(EXJHAED_fake_script)()
+
+Loaded.Parent = SizzsLoader
+Loaded.Name = "Loaded"
+Loaded.Value = false
+wait(LoadingTime)
+Loaded.Value = true
